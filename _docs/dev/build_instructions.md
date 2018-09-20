@@ -57,6 +57,16 @@ Next, run the setup tool, providing your github username as an argument as
 well as a path to a build area. It's common to create a new ZFS filesystem
 for this as shown below.
 
+> Note: bloody is in ongoing developent and you might get 
+> dependency problem if it is not up2date
+
+
+```
+# if you have dependency or version problems force update first
+pkg update -f
+init 6
+```
+
 ```
 # zfs create -o mountpoint=/build rpool/build
 % /opt/ooce/bin/omni setup /build <github username>
