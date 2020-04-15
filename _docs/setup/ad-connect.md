@@ -54,12 +54,14 @@ Make sure you have the following properties configured for every user in your ac
 
     * uid (username)
     * uidNumber 
-    * gitNumber
+    * gidNumber
     * homeDirectory
     * loginShell
     * gecos
 
 ![Active Directory Configuration](./ad-cfg.png)
+
+and for every Group in your active directory `gidNumber`
 
 ```terminal
 # sharectl set -p lmauth_level=5 smb
